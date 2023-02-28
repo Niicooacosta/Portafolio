@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" 
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Portafolio</title>
+</head>
+<body>
+    <header>
+        <div class="contenido-header">
+            <nav id="nav" class="">
+                <ul id="links">
+                    <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                    <li><a href="#info" onclick="seleccionar(this)">INFO</a></li>
+                    <li><a href="#habilidades" onclick="seleccionar(this)">HABILIDADES</a></li>
+                    <li><a href="#proyectos" onclick="seleccionar(this)">PROYECTOS</a></li>
+                    <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                </ul>
+            </nav>                    
+            <div id="icono-nav" onclick="responsiveMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            
+        </div>
+    </header>
+    <section id="inicio">
+        <div class="contenido">
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Me llamo <span id="nombre"></span>, soy Desarrollador Web </h2>
+                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quaerat aliquid harum voluptas fugit,
+                     consectetur tenetur dolorum aperiam et iste assumenda. </p>
+                     <a href="#proyectos">VER PROYECTOS</a>
+            </div>
+        </div>
+    </section>
+    <section id="info">
+        <div class="contenedor-foto">
+            <img id="foto" src="" alt="">
+        </div>
+        <div class="info">
+            <h3 class="titulo-seccion">Info</h3>
+            <h2>Hola soy <span id="name"></span> </h2>
+            <h3>Desarrollador Web</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem tempore animi minus nostrum!
+                 Tempora quis quod itaque reiciendis quos repellat. Vel molestias quis nulla. </p>
+                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                 <a href="#">Descargar CV</a>
+        </div>
+    </section>
+    <section id="habilidades">
+        <h3 class="titulo-seccion">HABILIDADES</h3>
+        <div class="fila">
+            <div class="habilidad">
+                <span class="icono"> <i id="html" class="fa-brands fa-2x fa-html5"></i></span>
+                <h4>HTML</h4>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <div class="habilidad">
+                <span class="icono"><i id="css" class="fa-brands fa-2x fa-css3-alt"></i></span>
+                <h4>CSS</h4>
+                <hr>                
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+            <div class="habilidad">
+                <span class="icono"><i id="js" class="fa-brands fa-2x fa-square-js"></i></span>
+                <h4>JAVASCRIPT</h4>
+                <hr>                
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+            </div>
+        </div>
+                  
+        </div>
+    </section>
+    <section id="proyectos">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="https://akus.b-cdn.net/imagenes/articulos/diseno-web-responsive-adaptable.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="https://www.decimoarte.com/wp-content/uploads/2017/12/diseno-web-responsive-decimoarte.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="https://redballoon.in/wp-content/uploads/2019/05/Responsive-Website-Design-The-Modern-Approach-to-Designing-Quality-Websites.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="https://www.nuntiumcomunicacion.com/wp-content/uploads/2021/07/diseno-web-responsive.png" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="https://wellaggio.com/wp-content/uploads/2015/04/un-buen-dise%C3%B1o-mejora-resultados-marketing1.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contacto</h3>
+        <div class="contenedor-contacto">
+            <div class="contenedor-form">
+                <form action="">
+                    <div class="fila">
+                    <input type="text" placeholder="Nombre Completo *" class="input-full">
+                    </div>
+                    <div class="fila">
+                    <input type="email" placeholder="Dirección de Email" class="input-full">
+                    </div>
+                    <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                    </div>
+                    <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                    </div>
+
+                    <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                </form>
+            </div>
+                <div class="redes">
+                    <p>Tambien puedes contactarme atraves de :</p> <br>
+                    <i class="fa-solid fa-phone"> <span id="phone"></span></i><br>
+                    <i class="fa-solid fa-envelope"> <span id="email"></span></i><br>
+            <a href="http://www.youtube.com/" target="_blank" rel="noopener noreferrer" ><i id="yt" class="fa-brands fa-youtube"></i></a>
+            <a href="http://www.facebook.com/" target="_blank" rel="noopener noreferrer"><i id="fb" class="fa-brands fa-facebook"></i></a>
+            <a href="http://www.instagram.com/" target="_blank" rel="noopener noreferrer"><i id="ig" class="fa-brands fa-instagram-square"></i></a>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <p>Portafolio a modo de ejemplo todas las imagenes son obtenidas de internet y no poseo los derechos</p><br>
+        <span>B10</span>
+
+        
+    </footer>
+    <script src="main.js"> </script>
+</body>
+</html>

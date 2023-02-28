@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato' ;
+    }
+
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    background-color: blue;
+   
+}
+
+header .contenido-header{
+max-width: 1100px;
+    margin: auto;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+header .contenido-header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+ }
+ header .contenido-header nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: 0s;
+ }
+ header .contenido-header nav ul li a:hover{
+    color: yellow ;
+ }
+ #inicio{
+    background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url("https://shenlong.com.ar/resources/users-uploads/galleries/256/noticias/laptop-g2b3b060e6-1920.jpg") ;
+    filter: grayscale(50%);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+#inicio .contenido .presentacion{
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#inicio .contenido .presentacion .bienvenida{
+    font-size:  34px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+#inicio .contenido .presentacion .bienvenida h2{
+   font-size: 55px;
+   margin-bottom: 25px; 
+   text-align: center;
+}
+#inicio .contenido .presentacion h2 span{
+    font-size: 25px;
+    color: yellow;
+}
+#inicio .contenido.presentacion .descripcion{
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+}
+#inicio .contenido .presentacion a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+#inicio .contenido .presentacion a:hover{
+    background-color: blue;
+    color: yellow;
+}
+#icono-nav{
+    color: #fff;
+    display: none;
+}
+
+
+#info {
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #111135;
+   display: flex;
+}
+#info .contenedor-foto{
+    max-width: 400px;
+    margin-right: 80px;
+}
+#info .contenedor-foto img{
+padding: 20px;
+width: 100%;
+border-radius: 20px;
+background-color: #f3f3f3;
+height: 400px;
+width: 300px;
+}
+#info .info {
+    margin: 0 40px;
+}
+#info .info .titulo-seccion{
+    
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+#info .info h2{
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+#info .info h2 span{
+    color: blue;
+}
+#info .info h3{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+#info .info p{
+    font-size: 14px;
+    line-height: 25px;
+    color: #565656 ;
+    margin-bottom: 12px;
+}
+#info .info a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    transition: .5s;
+}
+#info .info a:hover{
+    background-color: blue;
+    color: yellow;
+}
+
+
+#habilidades {
+    padding: 100px 15px;
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+#habilidades .titulo-seccion {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#habilidades .fila {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1150px;
+    margin: 30px auto;
+}
+
+#habilidades .fila .habilidad {
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+#habilidades .fila .habilidad:hover {
+    box-shadow: 5px 5px 10px #979799, -5px -5px 10px #979799;
+}
+
+#habilidades .fila .habilidad .icono {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #afa8a8;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+#habilidades .fila .habilidad #html{
+    color: red;
+}
+#habilidades .fila .habilidad #css{
+    color: blue;
+}
+#habilidades .fila .habilidad #js{
+    color: yellow;
+}
+#habilidades .fila .habilidad h4 {
+    font-size: 22px;
+    margin-bottom: 25px;
+    color: darkblue;
+}
+
+#habilidades .fila .habilidad hr {
+    width: 50%;
+    margin: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+#habilidades .fila .habilidad p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+#proyectos {
+    max-width: 1100px;
+    padding: 100px 0;
+    margin: auto;
+    }
+
+#proyectos .titulo-seccion {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#proyectos .fila {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+#proyectos .fila .proyecto {
+    border: 1px solid #000;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+    max-width: 350px;
+}
+
+#proyectos .fila .proyecto img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: .5s;
+}
+
+#proyectos .fila .proyecto:hover img {
+    filter: grayscale(0);
+}
+
+#proyectos .fila .proyecto .info {
+    position: absolute;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #787fe6;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+
+#proyectos .fila .proyecto:hover .info {
+    opacity: 1;
+    bottom: 0;
+}
+#contacto {
+    padding: 100px 15px;
+    background-color: #f3f3f3;
+}
+
+#contacto .titulo-seccion {
+    margin-bottom: 20px;
+}
+
+#contacto .contenedor-contacto{
+    display : flex;
+    flex-direction : row;
+    align-content: center;
+    justify-content: space-between;
+    max-width: 1100px;
+}
+#contacto .contenedor-contacto .redes{
+    text-align:justify;
+    text-decoration: none;
+            color: #130e52;
+            display: inline;
+            margin: 5px;
+            font-size: 20px;
+            max-width: 50%;
+            margin: auto;   
+        }
+#contacto .contenedor-contacto .redes i {
+color: black;
+}
+#contacto .contenedor-contacto .redes #yt{
+    color: red;
+}
+#contacto .contenedor-contacto .redes #fb{
+    color: blue;
+}
+#contacto .contenedor-contacto .redes #ig{
+    color: rgb(107, 32, 139);
+}
+#contacto .contenedor-contacto .redes span{
+    color: rgb(2, 2, 134);
+}
+
+#contacto .contenedor-contacto .redes a{
+color: #111135;
+}
+#contacto .contenedor-contacto .contenedor-form {
+    max-width: 50%;
+    margin: auto;
+    text-align:left;
+    
+}
+
+#contacto .contenedor-contacto .contenedor-form .fila {
+    margin-bottom: 15px;
+}
+
+
+#contacto .contenedor-contacto .contenedor-form input,
+#contacto .contenedor-contacto .contenedor-form textarea {
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #919191;
+}
+
+#contacto .contenedor-contacto .contenedor-form .input-full {
+    width: 100%;
+}
+
+#contacto .titulo-seccion {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#contacto .btn-enviar {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 15px !important;
+}
+
+#contacto .btn-enviar:hover {
+    background-color: blue;
+    color: yellow;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    nav {
+        display: none;
+    }
+    nav.responsive {
+        display: block;
+        background-color: rgba(0, 0, 0, .8);
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0;
+    }
+    nav.responsive ul {
+        display: block !important;
+        text-align: center;
+    }
+    nav.responsive ul li {
+        margin: 5px 0;
+    }
+    #icono-nav {
+        display: block;
+    }
+    #inicio .contenido .presentacion h2 {
+        font-size: 40px;
+    }
+    #info {
+        padding: 50px 0;
+        display: block;
+    }
+
+    #info .contenedor-foto {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        margin: 0 auto;
+        max-width: 200px;
+    }
+    #info .contenedor-foto img {
+        padding: 8px;
+    }
+    #info .info .titulo-seccion {
+        text-align: center;
+
+    }
+    #info .info h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    #habilidades {
+        padding: 50px 15px;        
+    }
+    #habilidades .fila {
+        display: block;
+    }
+    #habilidades .fila .habilidad {
+        margin: 10px auto;
+    }
+    #proyectos {
+        padding: 50px 0px;
+    }
+    #proyectos .fila {
+        display: block;
+    }
+    #proyectos .fila .proyecto {
+        margin: 10px auto;
+    }
+    #contacto {
+        padding: 50px 15px;
+    }
+    #contacto .contenedor-contacto{
+        width: 100%;
+        margin: auto ;
+        padding: auto ;
+        display: block;
+    }
+
+
+    #contacto .contenedor-contacto .contenedor-form .fila {
+        width: 100%;
+        margin-bottom: 15px;        
+    }
+    #contacto .contenedor-form .fila input {
+        width: 100%;
+        margin-bottom: 15px;
+    
+    }
+    #contacto .contenedor-form .fila .input-full{
+      display: block;
+      
+    }
+    #contacto .redes{
+        width: 100%;
+        
+        padding: 50px;
+        margin: 50px;
+
+       
+        
+    }
+    
+    #footer{
+        margin-top: 20px;
+    }
+}
