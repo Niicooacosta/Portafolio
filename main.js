@@ -9,7 +9,6 @@ const generarPersona = async() => {
     const respuesta = await fetch(url);
     const { results } = await respuesta.json();
     const datos = results[0];
-    console.log(datos);
     foto.src = datos.picture.large;
     names.textContent = datos.name.first + " "+ datos.name.last ;
     name.textContent = datos.name.first + " "+ datos.name.last ;
